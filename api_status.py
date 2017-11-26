@@ -1,6 +1,8 @@
+# Storing the different statuses as constants here.
 OK = "OK"
 FAILED = "FAILED"
 
+# Simple object to encapsulate the status.
 class APIStatus():
 	def __init__(self, api_status, temp_status, status_count):
 		self._api_status = api_status
