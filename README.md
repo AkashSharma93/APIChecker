@@ -3,6 +3,8 @@
 This utility polls a rest end point to check if the API is working as expected.
 In case the status changes from OK to FAILED, or vice versa, an email is sent to the recepient notifying him about the change.
 
+**HOW TO RUN**: Export your gmail id and password to the environment variables `smtp_login` and `smtp_password`. Now, execute api_poller.
+
 The various files do the following things:
 
 **api_checker**: This is the main file. It is responsible for making a get call to the API. Based on the response, it updates the status of the API, and based on the transition in state, calls the required method to send an email.
